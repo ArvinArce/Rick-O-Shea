@@ -21,9 +21,6 @@ public class PlayerMover : MonoBehaviour {
 	}
 	void FixedUpdate(){
 
-		Camera  c = Camera.main;
-		Event   e = Event.current;
-		Vector2 mousePos = new Vector2();
 
 		float moveHorizontal = Input.GetAxis ("Horizontal");
 		float moveVertical = Input.GetAxis ("Vertical");
@@ -35,7 +32,12 @@ public class PlayerMover : MonoBehaviour {
 		rb.position = new Vector3(Mathf.Clamp(rb.position.x, boundary.xMin, boundary.xMax),
 			0.0f,
 			Mathf.Clamp(rb.position.z, boundary.zMin, boundary.zMax));
-		Vector3 p = new Vector3();
-		p = c.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, c.nearClipPlane));
+	}
+	void OnTriggerEnter(Collider other){
+
+		if (other.CompareTag ("Wall")) {
+			Debug.Log ("Player is within Wall");
+			rb.velocity = Vector3.zero;
+		}
 	}
 }
