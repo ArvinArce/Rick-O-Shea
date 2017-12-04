@@ -35,6 +35,6 @@ public class Shoot : MonoBehaviour {
 		bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * bulletSpeed;
 
         // Destroy the bullet after 2 seconds
-        Destroy(bullet, 2.0f);
+        //Destroy(bullet, 2.0f);
     }
 }
