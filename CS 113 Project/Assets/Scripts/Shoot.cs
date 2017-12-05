@@ -7,6 +7,7 @@ public class Shoot : MonoBehaviour {
     public Transform bulletSpawn;
 	public float bulletSpeed;
 	public float fireRate;
+	public float bulletLifeTime;
 
 	private float nextFire = 0;
     // Use this for initialization
@@ -35,6 +36,6 @@ public class Shoot : MonoBehaviour {
 		bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * bulletSpeed;
 
         // Destroy the bullet after 2 seconds
-        //Destroy(bullet, 2.0f);
+		Destroy(bullet, bulletLifeTime);
     }
 }
