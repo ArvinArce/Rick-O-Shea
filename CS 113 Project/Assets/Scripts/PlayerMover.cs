@@ -7,13 +7,14 @@ public class Boundary
 {
 	public float xMin, xMax, zMin, zMax;
 }
-
+	
 public class PlayerMover : MonoBehaviour {
 	
 	private Rigidbody rb;
 	public Boundary boundary;
 
 	public float speed;
+	private bool gameOver = false;
 
 	void Start ()
 	{
@@ -33,11 +34,5 @@ public class PlayerMover : MonoBehaviour {
 			0.0f,
 			Mathf.Clamp(rb.position.z, boundary.zMin, boundary.zMax));
 	}
-	void OnTriggerEnter(Collider other){
 
-		if (other.CompareTag ("Wall")) {
-			Debug.Log ("Player is within Wall");
-			rb.velocity = Vector3.zero;
-		}
-	}
 }

@@ -4,4 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 0462e3b7df0caea4a9e80908b2bd7cfc
+  - enabled: 1
+    path: Assets/Scenes/Bedroom.unity
+    guid: 04029c2e361089d498a5568666b18585
+  - enabled: 1
+    path: Assets/Scenes/Bathroom.unity
+    guid: 9c04fae440e9f86468133c314bf9e215
