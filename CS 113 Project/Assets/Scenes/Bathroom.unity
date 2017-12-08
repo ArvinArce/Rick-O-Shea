@@ -1245,9 +1245,9 @@ MonoBehaviour:
   - {x: 9, y: 0, z: -3}
   - {x: -9, y: 0, z: 0}
   enemies:
-  - {fileID: 1671028623000494, guid: 9fb31502e02957f429fa7d5a9a77aae4, type: 2}
-  - {fileID: 1241477051767642, guid: 8233c0b3cb3c5a24a888816346c0d95c, type: 2}
-  - {fileID: 1241477051767642, guid: 8233c0b3cb3c5a24a888816346c0d95c, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   totalEnemies: 15
   spawnWait: 1.5
   startWait: 1
@@ -1856,7 +1856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fcc39fc211041d49848fefb29b91e64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneIndex: 2
+  nextSceneIndex: 3
 --- !u!23 &1375454424
 MeshRenderer:
   m_ObjectHideFlags: 0

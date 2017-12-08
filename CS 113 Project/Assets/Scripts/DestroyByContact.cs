@@ -19,7 +19,7 @@ public class DestroyByContact : MonoBehaviour {
 	void OnTriggerEnter(Collider other){
 		if (other.CompareTag ("Player"))
         {
-			gameObject.GetComponent<AudioSource>().Play()
+			gameObject.GetComponent<AudioSource> ().Play ();
             gameController.GameOver();
         }
 		if (other.CompareTag ("Player") || other.CompareTag("Bullet")) {
