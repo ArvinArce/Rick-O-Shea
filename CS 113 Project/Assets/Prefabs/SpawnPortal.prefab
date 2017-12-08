@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33776624083157396}
   - component: {fileID: 64592679804908808}
   - component: {fileID: 23803325019769990}
+  - component: {fileID: 114979864607979646}
   m_Layer: 0
   m_Name: SpawnPortal
   m_TagString: SpawnPortal
@@ -97,3 +98,14 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114979864607979646
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1683000608437234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d35f948d92de02840a85ba91e4dca73a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -34,7 +34,7 @@ public class GameController : MonoBehaviour {
 	}
 	public void GameOver(){
 		gameOver = true;
-		gameOverText.text = "Press 'r' to restart";
+		gameOverText.text = "Press 'R' to restart";
 	}
 	public void RoomComplete(){
 		GameObject closedDoorObject = GameObject.Find("Closed Door");

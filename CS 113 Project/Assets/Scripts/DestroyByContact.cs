@@ -17,12 +17,14 @@ public class DestroyByContact : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other){
-
+		if (other.CompareTag ("Player"))
+        {
+			gameObject.GetComponent<AudioSource>().Play()
+            gameController.GameOver();
+        }
 		if (other.CompareTag ("Player") || other.CompareTag("Bullet")) {
 			Destroy (other.gameObject);
 			Destroy (gameObject);
 		}
-		if (other.CompareTag ("Player"))
-			gameController.GameOver ();
 	}
 }
