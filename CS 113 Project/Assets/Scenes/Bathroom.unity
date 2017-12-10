@@ -1244,9 +1244,9 @@ MonoBehaviour:
   spawnLoc:
   - {x: 9, y: 0, z: -3}
   - {x: -9, y: 0, z: 0}
+  - {x: 8, y: 0, z: 4}
   enemies:
-  - {fileID: 1176895068895476, guid: 9fb31502e02957f429fa7d5a9a77aae4, type: 2}
-  - {fileID: 1626583685865682, guid: 8233c0b3cb3c5a24a888816346c0d95c, type: 2}
+  - {fileID: 1014485013763072, guid: 9fb31502e02957f429fa7d5a9a77aae4, type: 2}
   - {fileID: 1626583685865682, guid: 8233c0b3cb3c5a24a888816346c0d95c, type: 2}
   totalEnemies: 15
   spawnWait: 1.5

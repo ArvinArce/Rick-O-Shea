@@ -26,6 +26,7 @@ public class EnemySpawner : MonoBehaviour {
 			Debug.Log ("Cannot find 'GameController' object");
 		}
 		for (int i = 0; i < spawnLoc.Length; i++) {
+			//Vector3 portalLoc = new Vector3 (spawnLoc [i].x, spawnLoc [i].y + 2, spawnLoc [i].z);
 			Instantiate (spawnPortal, spawnLoc [i], Quaternion.identity);
 		}
 	}

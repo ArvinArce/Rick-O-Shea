@@ -15,5 +15,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Bathroom.unity
     guid: 9c04fae440e9f86468133c314bf9e215
   - enabled: 1
+    path: Assets/Scenes/Hallway.unity
+    guid: 4337a5d0e98e0784fb5789731fd54380
+  - enabled: 1
+    path: Assets/Scenes/Dark Room.unity
+    guid: bd1a62f4b43e1e547b54b80d8e3135d0
+  - enabled: 1
+    path: Assets/Scenes/Front Room.unity
+    guid: f0a0efb0034c22a40bd244f98b1b5d10
+  - enabled: 1
     path: Assets/Scenes/Graveyard.unity
     guid: 17b4afa3954d4244489022ac8d443ff7
