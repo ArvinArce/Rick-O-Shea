@@ -5,10 +5,13 @@ using UnityEngine;
 public class DestroyByContact : MonoBehaviour {
 
 	public GameController gameController;
+    AudioSource audioSource;
+    public AudioClip killSound;
 
 	void Start()
 	{
-		GameObject gameControllerObject = GameObject.FindWithTag ("GameController");
+        audioSource = gameObject.GetComponent<AudioSource>();
+        GameObject gameControllerObject = GameObject.FindWithTag ("GameController");
 		if (gameControllerObject != null) {
 			gameController = gameControllerObject.GetComponent<GameController> ();
 		} else {
@@ -19,10 +22,12 @@ public class DestroyByContact : MonoBehaviour {
 	void OnTriggerEnter(Collider other){
 		if (other.CompareTag ("Player"))
         {
-			gameObject.GetComponent<AudioSource> ().Play ();
+            audioSource.clip = killSound;
+            audioSource.Play();
+            Destroy(other.gameObject);
             gameController.GameOver();
         }
-		if (other.CompareTag ("Player") || other.CompareTag("Bullet")) {
+		if (other.CompareTag("Bullet")) {
 			Destroy (other.gameObject);
 			Destroy (gameObject);
 		}
