@@ -1302,11 +1302,11 @@ MonoBehaviour:
   - {x: 8.5, y: 0, z: -2}
   enemies:
   - {fileID: 1626583685865682, guid: 8233c0b3cb3c5a24a888816346c0d95c, type: 2}
-  totalEnemies: 15
-  spawnWait: 1.25
+  totalEnemies: 20
+  spawnWait: 1
   startWait: 1
   gameController: {fileID: 0}
-  spawnPortal: {fileID: 1683000608437234, guid: e9232bed7e4959c44bf85ffbeb0fd8c2,
+  spawnPortal: {fileID: 1921356491587474, guid: d1e907b0e9b805b428d701d460c94331,
     type: 2}
 --- !u!4 &1667311105
 Transform:

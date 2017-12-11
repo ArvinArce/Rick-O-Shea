@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.56452316, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1252,7 +1252,7 @@ MonoBehaviour:
   spawnWait: 1.5
   startWait: 1
   gameController: {fileID: 0}
-  spawnPortal: {fileID: 1683000608437234, guid: e9232bed7e4959c44bf85ffbeb0fd8c2,
+  spawnPortal: {fileID: 1921356491587474, guid: d1e907b0e9b805b428d701d460c94331,
     type: 2}
 --- !u!4 &1061320718
 Transform:
