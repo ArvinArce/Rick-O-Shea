@@ -39,7 +39,11 @@ public class GameController : MonoBehaviour {
 	void Update(){
 		if (gameOver && Input.GetKey (KeyCode.R))
 			Application.LoadLevel (Application.loadedLevel);
-		if (Input.GetKey (KeyCode.Escape)) SceneManager.LoadScene (0);
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Destroy(GameObject.Find("MusicController"));
+            SceneManager.LoadScene(0);
+        }
 	}
 	public void GameOver(){
 		gameOver = true;
