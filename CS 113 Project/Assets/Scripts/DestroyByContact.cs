@@ -7,6 +7,7 @@ public class DestroyByContact : MonoBehaviour {
 	public GameController gameController;
     AudioSource audioSource;
     public AudioClip killSound;
+	public GameObject splat;
 
 	void Start()
 	{
@@ -29,6 +30,7 @@ public class DestroyByContact : MonoBehaviour {
         }
 		if (other.CompareTag("Bullet")) {
 			Destroy (other.gameObject);
+			Instantiate (splat, transform.position, transform.rotation);
 			Destroy (gameObject);
 		}
 	}

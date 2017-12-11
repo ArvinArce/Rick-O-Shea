@@ -14,6 +14,8 @@ public class GameController : MonoBehaviour {
 	private bool gameOver;
 	private GameObject closedDoor;
 	private GameObject openDoor;
+	private GameObject musicLoop;
+
 
 	void Start () {
 		gameOver = false;
@@ -25,12 +27,19 @@ public class GameController : MonoBehaviour {
 		} else {
 			Debug.Log ("Cannot find 'Open Door' object");
 		}
+		GameObject musicLoopObject = GameObject.Find("Music Loop");
+		if (musicLoopObject != null) {
+			musicLoop = musicLoopObject;
+			musicLoop.SetActive (false);
+		} else {
+			Debug.Log ("Cannot find 'Music Loop' object");
+		}
 	}
 
 	void Update(){
 		if (gameOver && Input.GetKey (KeyCode.R))
 			Application.LoadLevel (Application.loadedLevel);
-		if (Input.GetKey (KeyCode.Escape)) Application.Quit();
+		if (Input.GetKey (KeyCode.Escape)) SceneManager.LoadScene (0);
 	}
 	public void GameOver(){
 		gameOver = true;
@@ -46,5 +55,11 @@ public class GameController : MonoBehaviour {
 		}
 		if(openDoor != null)
 			openDoor.SetActive (true);
+	}
+	IEnumerator StartLoop ()
+	{
+		yield return new WaitForSeconds (5);
+		musicLoop.SetActive (true);
+
 	}
 }

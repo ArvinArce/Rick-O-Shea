@@ -355,6 +355,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameController: {fileID: 0}
   killSound: {fileID: 8300000, guid: 5a204e5e28c81d143a0de0f514a66a92, type: 3}
+  splat: {fileID: 1227332924585828, guid: 9f103928985ccec4bbd4af3aa519a3f9, type: 2}
 --- !u!114 &114906820020869220
 MonoBehaviour:
   m_ObjectHideFlags: 1
